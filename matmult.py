@@ -8,7 +8,7 @@ mat2 = [[5, 6, 7],
             [11, 12, 13]]
 
 
-def matMult(mat1, mat2):
+def mult(mat1, mat2):
     nums = []
     finalMat = []
 
