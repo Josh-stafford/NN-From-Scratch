@@ -1,11 +1,9 @@
-mat1 = [[1, 2, 3, 4],
-            [3, 4, 5, 6],
-            [6, 7, 8, 9]]
+mat1 = [[1, 2, 3],
+            [3, 4, 5]]
 
-mat2 = [[5, 6, 7],
-            [7, 8, 9],
-            [9, 10, 11],
-            [11, 12, 13]]
+mat2 = [[5, 6],
+            [7, 8],
+            [9, 10]]
 
 
 def mult(mat1, mat2):
@@ -28,13 +26,14 @@ def mult(mat1, mat2):
                 #print(mat1[row][num], mat2[num][column])
 
                 number = mat1[row][num] * mat2[num][column]
-
+                
                 if num == width-1:
                     # print(num)
                     for i in lastNums:
                         number += i
                     nums.append(number)
-                    lastNums = []
+                    lastNums = []c
+
                 else:
                     lastNums.append(number)
                     # print(lastNums)
@@ -61,4 +60,4 @@ def mult(mat1, mat2):
     print(finalMat)
 
 if __name__ == '__main__':
-    matMult(mat1, mat2)
+    mult(mat1, mat2)
